@@ -1,0 +1,251 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---------------------------
+- header part 
+---------------------------*/
+/*(part Menubar part Started) */
+.menu-bar{
+    justify-content: center;
+    margin-top: 10px;
+    background-color: darkblue;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width:120px;
+    margin: 15px;
+    padding: 20px; 
+}
+.menu-bar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white; 
+}
+/*(part Menubar part Ended) */
+
+.top-banner{
+    width: 1440px;
+    height: 677px;
+    display: flex;
+    margin-bottom: 70px;
+    flex-direction: row;
+    background-color: darkblue;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.title-part{
+    margin: 0px 102px 27px 156px;
+    width: 485px;
+    height: 230px;
+}
+.title-part h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 64px;
+}
+.button-one a{
+    padding-left: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.button a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.banner:hover h1 {
+        transform: scale(1.5)  ;
+        transition: transform 1s ease-in 
+        }
+.half-width:hover img {
+        transform: scale(0.5)  rotate(360deg);
+       transition: transform 1s ease-in 
+        }
+.half-width img{
+    margin: 153px 141px 86px 0px;
+    width: 556.01px;
+    height: 438px;
+}
+/*-----------------------------
+ header part ended -----------
+ ---------------------------*/
+
+/*----------------------------
+ Football player started
+ --------------------------- */
+
+.container{
+    background-color: #FFFFFF;
+    width: 1050px;
+    padding: 30px; 
+}
+
+.players{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 24px;
+     margin: 0px 210px 27px 180px;
+ }
+  .player{
+    width:330px;
+    height :474px;
+    padding: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+  .player .player-banner img{
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 300px;
+    height: 256px;
+ }
+ /*------------------------
+  Football player Ended
+  ----------------------- */
+/*-------------------------
+ football All Highlights-----
+ --------------------------  */
+.highlights{
+    display: flex;
+    flex-direction: row;
+}
+.part-one {
+    width: 469px;
+    height: 309px;
+    margin: 224px 0px 217px 182px;
+
+}
+.part-one a{
+    width: 173px;
+    height: 44px;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    color:#FFFFFF ;
+    
+}
+.part-two img{
+    margin: 140px 156px 158px 66px;
+    width: 567px;
+    height: 427px;
+}
+.extra h1{
+    color:white;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 5px;
+    background-color: darkblue;
+    border-radius: 10px ;
+}
+.video-section{
+    margin-left: 60px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/*-------------------------
+ football All Highlights ended-----
+ --------------------------  */
+ /*------------------------
+  Extra part ---------------------
+  ---------------------*/
+.content-five{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+/*---------------------
+- Extra part  end
+----------------------- */
+
+/* -----------------------
+foooter part started
+------------------------ */
+footer{
+    width: 483.87px;
+    height: 213px;
+    margin: 158px 481px 63px 475px;
+}
+.logo img{
+ width: 500px;
+ height: 200px;
+}
+
+.logo-icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.socia-media-icon{
+    font-size: 25px;
+}
+/* -----------------------
+foooter part end
+------------------------ */
+ /*-------------------------
+ ----- Media Queries--------
+ --------------------------- */
+ /* Mobile Devices */
+ @media only screen and (max-width:688px) {
+     .container {
+         width: 100%;
+     }
+     .players , .extra ,.highlights{
+        
+         grid-template-columns: repeat(1,1fr);
+     }
+     .player ,{
+         flex-direction: column;
+     }
+     
+ }
+
+
+
+
+ /* Tablet devices */
+
+
+  @media only screen and  (min-width:688px) and (max-width:992px) {
+     .container , .top-banner{
+         width: 100%;
+     }
+    .extra ,.highlights {
+        
+         grid-template-columns: repeat(2,1fr);
+     }
+     .players {
+        
+         grid-template-columns: repeat(1,1fr);
+     }
+
+     .players, .extra ,.highlights{
+         flex-direction: column;
+     }
+     
+ }
